@@ -5,7 +5,16 @@ zh-CN:
       author_type: 作者类型 
       created_at: 创建时间
       delete: 删除
-    dashboard: 数据展示      
+    dashboard: 数据展示    
+    formtastic:
+      yes: 是
+      no: 否
+      create: '%{model}创建'
+      update: '%{model}更新'
+      submit: '%{model}提交'
+      cancel: '%{model}取消'
+      reset: '%{model}初期化'
+      required: '必须'
   date:
     abbr_day_names:
     - 日
@@ -202,5 +211,59 @@ zh-CN:
     errors:
       <<: *errors
   activerecord:
+    models:
+     admin_user: 管理者
+     comment: 评论
+     company: 公司
+     monitor_result: 监控结果
+     monitor_task: 监控任务
+     monitor_video: 监控视频
+    attributes:
+      company:
+        name: 名称
+        description: 描述
+        created_at: 创建时间
+        updated_at: 更新时间 
+        monitor_video: 监控视频 
+      monitor_video:
+        name: 名称
+        description: 描述
+        keyword: 关键词
+        created_at: 创建时间
+        updated_at: 更新时间
+        company: 公司
+        monitor_tasks: 监控任务 
+        monitor_result: 监控结果
+      monitor_task:
+        mt_type: 类型
+        name: 名称
+        lengthtype: 长度类型
+        engine: 引擎
+        schedule_time: 进度时间
+        schedule_frequency: 进度频繁
+        status: 状态
+        last_start_time: 最后开始时间
+        last_end_time: 最后结束时间
+        monitor_videos: 监控视频
+        monitor_result: 监控结果
+      monitor_result:
+        title: 标题
+        href: 连接
+        duration: 持续时间
+        durationType: 持续时间类型
+        Page: 页面
+        time: 时间
+        engine: 引擎
+        source: 来源
+        KeyMatch: 关键匹配
+        VideoKey: 视频关键词
+        monitor_video: 监控视频
+        is_tort: 侵权
+        upload_time: 上传时间
+        GOL_time: GOL时间
+        is_eliminate: 消除
+        monitor_task: 监控任务 
+        created_at: 创建时间
+        updated_at: 更新时间
     errors:
       <<: *errors  

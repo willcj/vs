@@ -1,5 +1,8 @@
+# coding: utf-8
 class MonitorResult < ActiveRecord::Base
-   
+  belongs_to :monitor_task
+  belongs_to :monitor_video
+
   KEYMATCH = {
   				"0" => "不匹配",
   				"1" => "匹配"

@@ -13,5 +13,9 @@ ActiveAdmin.register Company do
 #   permitted
 # end
 
+  index do
+    column(:name, :name)
+    column(:description, :description)
+  end
 
 end

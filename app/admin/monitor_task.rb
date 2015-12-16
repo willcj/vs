@@ -12,7 +12,17 @@ ActiveAdmin.register MonitorTask do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-
+  index do
+    column(:mt_type, :mt_type)
+    column(:name, :name)
+    column(:lengthtype, :lengthtype)
+    column(:engine, :engine)
+    column(:schedule_time, :schedule_time)
+    column(:schedule_frequency, :schedule_frequency)
+    column(:status, :status)
+    column(:last_start_time, :last_start_time)
+    column(:last_end_time, :last_end_time)
+  end
   form do |f|
     f.inputs do
       f.input :mt_type
@@ -23,10 +33,9 @@ ActiveAdmin.register MonitorTask do
       f.input :schedule_frequency
       f.input :status
       f.input :last_start_time, :as => :just_datetime_picker
-      f.input :last_end_time, :as => :just_datetime_picker
+      f.input :last_end_time, :as => :just_datetime_picker   
     end
-    f.button("submit")
-    link_to f.button("cancel"), "/admin/monitor_tasks"
+    f.actions
   end
 
 end

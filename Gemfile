@@ -80,3 +80,5 @@ gem 'jquery-ui-rails'
 
 gem "just-datetime-picker"
 
+gem 'activeadmin-translate', github: 'twintags/activeadmin-translate'
+
