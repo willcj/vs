@@ -18,7 +18,7 @@ ActiveAdmin.register_page "Dashboard" do
       column do
         panel "Monitor Task" do
           table_for MonitorTask.order('id desc').limit(10).each do |mt|
-            column(:type)    {|mt| mt.type }
+            column(:type)    {|mt| mt.mt_type }
             column(:name)    {|mt| mt.name }
             column(:engine)    {|mt| mt.engine }
             column(:status)    {|mt| mt.status }
