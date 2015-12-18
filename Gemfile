@@ -82,3 +82,5 @@ gem "just-datetime-picker"
 
 gem 'activeadmin-translate', github: 'twintags/activeadmin-translate'
 
+gem 'devise-i18n'
+
