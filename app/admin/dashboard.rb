@@ -8,8 +8,8 @@ ActiveAdmin.register_page "Dashboard" do
       column do
         panel "Monitor Result" do
           table_for MonitorResult.order('id desc').limit(20) do
-            column(:title)   {|mr| link_to(mr.title, admin_monitor_result_path(mr)) }
-            column(:duration)   {|mr| mr.duration }
+            column(:title)   {|mr| link_to(mr.Title, admin_monitor_result_path(mr)) }
+            column(:duration)   {|mr| mr.Duration }
             column(:VideoKey)   {|mr| mr.VideoKey }
           end
         end

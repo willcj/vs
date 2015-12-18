@@ -17,6 +17,7 @@ ActiveAdmin.register MonitorVideo do
     column(:description, :description)
     column(:keyword, :keyword)
     column(:company, :company)
+    actions
   end
 
 end

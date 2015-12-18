@@ -16,6 +16,7 @@ ActiveAdmin.register Company do
   index do
     column(:name, :name)
     column(:description, :description)
+    actions
   end
 
 end

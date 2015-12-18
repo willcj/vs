@@ -22,6 +22,7 @@ ActiveAdmin.register MonitorTask do
     column(:status, :status)
     column(:last_start_time, :last_start_time)
     column(:last_end_time, :last_end_time)
+    actions
   end
   form do |f|
     f.inputs do
